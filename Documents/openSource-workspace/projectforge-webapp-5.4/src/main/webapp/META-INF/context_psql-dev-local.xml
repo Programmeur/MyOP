@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<Context path="" reloadable="false" debug="0" docBase="webapps" cookies="false">
+  <Resource name="jdbc/ProjectForgeDS" type="javax.sql.DataSource" auth="Container" driverClassName="org.postgresql.Driver"
+    url="jdbc:postgresql://localhost:5432/projectforge" maxActive="100" maxIdle="30" maxWait="10000" username="postgres" password="" />
+  <Parameter name="base.dir" value="${user.home}/ProjectForge" override="false" />
+  <Parameter name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" override="false" />
+  <Parameter name="hibernate.schemaUpdate" value="true" override="false" />
+  <Parameter name="development" value="true" override="false" />
+  <Parameter name="stripWicketTags" value="true" override="false" />
+</Context>
+<!--
+<Context path="" reloadable="false" debug="0" docBase="webapps" cookies="true">
+  <Resource name="jdbc/ProjectForgeDS" type="javax.sql.DataSource" auth="Container" driverClassName="org.git.mm.mysql.Driver"
+    url="jdbc:mysql://localhost:3306/projectforge" maxActive="100" maxIdle="30" maxWait="10000" username="root" password="1234" />
+  <Parameter name="base.dir" value="ProjectForge" override="false" />
+  <Parameter name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" override="false" />
+  <Parameter name="hibernate.schemaUpdate" value="false" override="false" />
+  <Parameter name="development" value="true" override="false" />
+  <Parameter name="stripWicketTags" value="true" override="false" />
+</Context>
+-->
